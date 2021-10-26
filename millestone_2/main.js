@@ -139,8 +139,7 @@ const colorIcon = icons.filter((icon) => {
     } else if (icon.type === `user`)
         violetCard.push(icon)
 })
-//richiamare le funzioni con i vari array
-getIcon(blueCard)
-getIcon(orangeCard)
-getIcon(violetCard)
+//richiamare le funzioni con array
+getIcon(icons)
+
 
