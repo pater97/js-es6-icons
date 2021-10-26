@@ -141,6 +141,7 @@ const colorIcon = icons.filter((icon) => {
 })
 //richiamare le funzioni con array
 button.addEventListener(`change`, function () {
+    stamp.innerHTML = ``
     if (button.value == `all`) {
         getIcon(icons)
     } else if (button.value == `animal`) {
