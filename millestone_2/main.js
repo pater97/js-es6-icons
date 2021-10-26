@@ -111,7 +111,7 @@ function getIcon(icons) {
     icons.forEach(icon => {
         stamp.innerHTML += `
         <section class="col">
-        <div class="card">
+        <div class="card ${icon.type}">
             <i class="${icon.family} ${icon.prefix}${icon.name}"></i>
             <h6>${icon.name}</h6>
         </div>
@@ -119,7 +119,6 @@ function getIcon(icons) {
     });
 }
 //evocare la funzione
-getIcon(icons)
 //creare una variabile per selezionare la card a cui aggiungere la classe con in colore
 const card = document.querySelector(`.card`)
 function cards(card) {
@@ -140,5 +139,8 @@ const colorIcon = icons.filter((icon) => {
     } else if (icon.type === `user`)
         violetCard.push(icon)
 })
-
+//richiamare le funzioni con i vari array
+getIcon(blueCard)
+getIcon(orangeCard)
+getIcon(violetCard)
 

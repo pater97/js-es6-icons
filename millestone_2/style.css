@@ -48,9 +48,12 @@ nav{
 .azzurro{
     background-color: #29b1dd;
 }
-.blue{
+.animal{
     color: blue;
 }
-.yellow{
-    color: yellow;
+.vegetable{
+    color: orange;
+}
+.user{
+    color: blueviolet;
 }
