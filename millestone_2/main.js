@@ -106,6 +106,8 @@ const icons = [
 
 //creazione della variabile per la stampa 
 const stamp = document.querySelector(`.container`)
+const button = document.getElementById(`chose`)
+console.log(button.value);
 //creare una funzione con all'interno il ciclo for each per stampare le icone 
 function getIcon(icons) {
     icons.forEach(icon => {
@@ -119,8 +121,6 @@ function getIcon(icons) {
     });
 }
 //evocare la funzione
-//creare una variabile per selezionare la card a cui aggiungere la classe con in colore
-const card = document.querySelector(`.card`)
 function cards(card) {
     for (let i = 0; i < card.clientHeight; i++) {
         const cards = card[i]
@@ -140,6 +140,18 @@ const colorIcon = icons.filter((icon) => {
         violetCard.push(icon)
 })
 //richiamare le funzioni con array
-getIcon(icons)
+button.addEventListener(`click`, function () {
+    if (button.value == `all`) {
+        getIcon(icons)
+    } else if (button.value == `animal`) {
+        getIcon(blueCard)
+    } else if (button.value == `vegetable`) {
+        getIcon(orangeCard)
+    } else if (button.value == `user`)
+        getIcon(violetCard)
+})
+
+
+
 
 
