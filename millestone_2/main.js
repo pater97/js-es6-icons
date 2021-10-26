@@ -121,12 +121,8 @@ function getIcon(icons) {
     });
 }
 //evocare la funzione
-function cards(card) {
-    for (let i = 0; i < card.clientHeight; i++) {
-        const cards = card[i]
-        return cards
-    }
-}
+getIcon(icons)
+//creazione di aray vuoti per poi riempirli in base al tipo
 const blueCard = []
 const orangeCard = []
 const violetCard = []
@@ -139,7 +135,7 @@ const colorIcon = icons.filter((icon) => {
     } else if (icon.type === `user`)
         violetCard.push(icon)
 })
-//richiamare le funzioni con array
+//richiamare le icone in base al tipo selezionato 
 button.addEventListener(`change`, function () {
     stamp.innerHTML = ``
     if (button.value == `all`) {
