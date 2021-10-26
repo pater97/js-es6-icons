@@ -140,7 +140,7 @@ const colorIcon = icons.filter((icon) => {
         violetCard.push(icon)
 })
 //richiamare le funzioni con array
-button.addEventListener(`click`, function () {
+button.addEventListener(`change`, function () {
     if (button.value == `all`) {
         getIcon(icons)
     } else if (button.value == `animal`) {
