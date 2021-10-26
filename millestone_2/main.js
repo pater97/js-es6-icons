@@ -111,8 +111,8 @@ function getIcon(icons) {
     icons.forEach(icon => {
         stamp.innerHTML += `
         <section class="col">
-        <div class="card ${icon.type}">
-            <i class="${icon.family} ${icon.prefix}${icon.name}"></i>
+        <div class="card">
+            <i class="${icon.family} ${icon.prefix}${icon.name}  ${icon.type}"></i>
             <h6>${icon.name}</h6>
         </div>
         </section>`
